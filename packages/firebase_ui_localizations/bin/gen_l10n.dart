@@ -170,7 +170,7 @@ class Label {
 Future<String> getLicenseHeader() async {
   final now = DateTime.now();
 
-  final licenseFile = File(path.join(cwd, '../..', 'header_template.txt'));
+  final licenseFile = File(path.join(cwd, 'lib', 'header_template.txt'));
   final template = await licenseFile.readAsString();
 
   return template
